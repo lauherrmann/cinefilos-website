@@ -4,8 +4,9 @@ import './movieCard.css'
 
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
+const imageURL = import.meta.env.VITE_IMG;
 
-const MovieCard = () => {
+const MovieCard = ({ showLink = true }) => {
 
         const [topRatedMovies, setTopRetadMovies] = useState([]);
     
@@ -29,9 +30,10 @@ const MovieCard = () => {
                     {topRatedMovies.map(movie => (
                         <Card className='movie_card'
                             key={movie.id}
-                            img = {movie.poster_path}
-                            imageDescription = {moviesURL.title}
-                            title = {moviesURL.title}
+                            img = {imageURL + movie.poster_path}
+                            imageDescription = {movie.title}
+                            title = {movie.title}
+                            voteAverage = {movie.vote_average}
                         />
                     ))}
                 </section> 

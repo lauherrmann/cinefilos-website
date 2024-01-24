@@ -1,6 +1,7 @@
 import './card.css';
+import { FaStar } from "react-icons/fa";
 
-function Card( {img, imageDescription, title} ) {
+function Card( {img, imageDescription, title, voteAverage} ) {
     return (
         <div className='card_content'>
             <div className='photo_container'>
@@ -9,6 +10,8 @@ function Card( {img, imageDescription, title} ) {
             <div className="description_container">
                 <h1 className='card_title'>{title}</h1>
             </div>
+            <p><FaStar /> {voteAverage} </p>
+            
         </div>  
     )
 }
