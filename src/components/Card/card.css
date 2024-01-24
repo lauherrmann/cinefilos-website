@@ -1,0 +1,40 @@
+.card_content {
+    background: var(--quaternary_grey);
+    box-shadow: 0 4px 8px rgb(39, 38, 38);
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.card_content:hover {
+    box-shadow: 0 0 2px 2px var(--primary_green);
+}
+
+.photo_container{
+    background-image: var(--quaternary_grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 20px 0px 20px;
+}
+
+.card_photo{
+    border-radius: 10px;
+    margin: 30px;
+    width: 80%;
+    height: 50%;
+}
+
+.description_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15%;
+    margin-bottom: 10px;
+    padding: 2px 5px 2px 5px;
+}
+
+.card_title {
+    color: var(--primary_grey);
+    font-size: 15px;
+    text-align: center;
+} 

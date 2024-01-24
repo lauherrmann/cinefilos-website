@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.movies_cards-container {
+    min-height: 100vh;
+    background: var(--secondary_grey);
+    padding: 90px 80px 90px 80px;
+    border-radius: 30px;
+    margin: 0px 230px 80px 230px;
+}
