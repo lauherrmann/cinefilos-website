@@ -4,12 +4,13 @@ import "./logo.css";
 
 function Logo() {
     return (
-        <h2 className='cinefilos-logo'>
-            <Link to="/">
-                <BiCameraMovie />
-                Cinéfilos
-            </Link>
-        </h2>
+        <div className='cinefilos-logo'>
+            <BiCameraMovie className='logo-icon' />
+            <h2 >
+                <Link to="/"> Cinéfilos </Link>
+            </h2>  
+        </div>
+        
     )
 }
 

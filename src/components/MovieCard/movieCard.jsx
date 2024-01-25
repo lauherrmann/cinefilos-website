@@ -26,7 +26,7 @@ const MovieCard = ({ showLink = true }) => {
 
         return (
                 <section className='cards_container'>
-                    {topRatedMovies.length === 0 && <p>Carregabdo...</p>}
+                    {topRatedMovies.length === 0 && <p>Carregando...</p>}
                     {topRatedMovies.map(movie => (
                         <Card className='movie_card'
                             key={movie.id}
@@ -34,6 +34,7 @@ const MovieCard = ({ showLink = true }) => {
                             imageDescription = {movie.title}
                             title = {movie.title}
                             voteAverage = {movie.vote_average}
+                            detailsRedirect = {`/movie/${movie.id}`}
                         />
                     ))}
                 </section> 

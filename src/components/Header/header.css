@@ -1,0 +1,20 @@
+
+.navbar-container{
+    background-color: var(--secondary_grey);
+    padding: 10px 40px 10px 40px;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLink {
+    font-size: 18px;
+}
+
+.navbar-content form{
+    display: flex;
+    gap: .5rem;
+}

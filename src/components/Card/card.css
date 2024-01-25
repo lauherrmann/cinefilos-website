@@ -5,6 +5,7 @@
     border: 1px solid;
     box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.37);
     padding-bottom: 30px;
+    margin: 0px;
 }
 
 .card_content:hover {
@@ -46,4 +47,10 @@
 .card-vote-average{
     text-align: center;
     margin: 0px;
+}
+
+.card-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

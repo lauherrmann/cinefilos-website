@@ -1,0 +1,10 @@
+.cinefilos-logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon{
+    width: 50px;
+    height: 28px;
+    color: var(--primary_yellow);
+}

@@ -1,0 +1,15 @@
+.search-input{
+    width: 350px;
+    height: 38px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 12px;
+    background-color: var(--tertiary_grey);
+}
+
+.search-button{
+    border-radius: 50%;
+    width: 40px;
+    border: none;
+    background-color: var(--tertiary_grey);
+}
