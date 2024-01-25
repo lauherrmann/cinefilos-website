@@ -6,22 +6,26 @@
 
   --primary_grey: #292828;
   --secondary_grey:#3A3A3A;
-  --tertiary_grey: #929191;
+  --tertiary_grey: #c9c8c8;
   --quaternary_grey: #D9D9D9;
+  --primary_yellow: rgb(250, 233, 81);
+  --secondary_yellow: rgb(226, 208, 47); 
   --white: #fff;
 }
 
 body{
   background-color: var(--primary_grey);
+  background-image: url("./img/popped_popcorn.png");
+  background-repeat: repeat;
   color: var(--white);
 }
 
 a{
   text-decoration: none;
-  color: rgb(247, 234, 125);
+  color: var(--primary_yellow);
   transition: 0.55;
 }
 
 a:hover{
-  color: rgb(199, 189, 104);
+  color: var(--secondary_yellow);
 }

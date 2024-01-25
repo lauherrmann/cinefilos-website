@@ -2,7 +2,7 @@ function Search() {
 
     return (
       <>
-        <h2>Cinefilos</h2>  
+        <h3>search</h3>
       </>
     )
   }

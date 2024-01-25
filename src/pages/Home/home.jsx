@@ -6,9 +6,7 @@ const Home = () => {
     return (
         <>
             <section className='home-container'> 
-                <div>
-                    <h2>Home</h2>
-                </div>
+                <h2>Movies average list</h2>
                 <div className='movies_cards-container'>
                     <MovieCard />
                 </div>

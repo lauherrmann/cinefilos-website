@@ -11,8 +11,7 @@ body {
 
 .movies_cards-container {
     min-height: 100vh;
-    background: var(--secondary_grey);
     padding: 90px 80px 90px 80px;
     border-radius: 30px;
-    margin: 0px 230px 80px 230px;
+    margin: 0px 50px 0px 50px;
 }

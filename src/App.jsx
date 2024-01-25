@@ -1,8 +1,6 @@
-import { useState } from 'react'
 import './App.css'
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Header from './components/Header/header'
-import Home from './pages/Home/home'
 
 function App() {
 
@@ -14,4 +12,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

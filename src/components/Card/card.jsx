@@ -10,8 +10,7 @@ function Card( {img, imageDescription, title, voteAverage} ) {
             <div className="description_container">
                 <h1 className='card_title'>{title}</h1>
             </div>
-            <p><FaStar /> {voteAverage} </p>
-            
+            <p className='card-vote-average'><FaStar /> {voteAverage} </p>
         </div>  
     )
 }

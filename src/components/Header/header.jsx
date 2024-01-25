@@ -1,23 +1,16 @@
 import { Link } from 'react-router-dom';
-import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
+import Search from '..//Search/search';
+import Logo from "../Logo/logo";
 
 function Header() {
 
   return (
     <nav>
-        <h2>
-        <   Link to="/">
-            <BiCameraMovie />
-                Cinefilos
-            </Link>
-        </h2>
-        <form>
-            <input type='text' placeholder='Search for a movie'/>
-            <button type='submit'> <BiSearchAlt2 /> </button>
-        </form>
+        <Logo />
+        <Search />
         <Link to="/movie/1">Movie</Link>
         <Link to="/search">Search</Link>
-  </nav>
+    </nav>
   )
 }
 
