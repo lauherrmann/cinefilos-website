@@ -7,10 +7,9 @@ function Logo() {
         <div className='cinefilos-logo'>
             <BiCameraMovie className='logo-icon' />
             <h2 >
-                <Link to="/"> Cinéfilos </Link>
+                <Link to="/" className='logo-text'> Cinéfilos </Link>
             </h2>  
         </div>
-        
     )
 }
 

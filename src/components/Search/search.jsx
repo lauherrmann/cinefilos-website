@@ -6,7 +6,7 @@ function Search(){
     return(
         <form>
             <input type='text' placeholder='Search for a movie' className='search-input'/>
-            <button type='submit' className='search-button'> <BiSearchAlt2 /> </button>
+            <button type='submit' className='search-button'> <BiSearchAlt2 className='search-icon' /> </button>
         </form> 
     )
 }

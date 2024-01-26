@@ -1,7 +1,6 @@
-
 .navbar-container{
     background-color: var(--secondary_grey);
-    padding: 10px 40px 10px 40px;
+    padding: 10px 100px 10px 100px;
 }
 
 .navbar-content{
@@ -12,6 +11,8 @@
 
 .navbarLink {
     font-size: 18px;
+    text-decoration: none;
+    color: var(--white);
 }
 
 .navbar-content form{

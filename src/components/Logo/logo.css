@@ -1,10 +1,18 @@
 .cinefilos-logo{
     display: flex;
-    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
+.logo-text{
+    text-decoration: none;
+    color: var(--white);
+}
+  
 .logo-icon{
+    align-self: center;
+    margin-bottom: 5px;
     width: 50px;
     height: 28px;
-    color: var(--primary_yellow);
+    color: var(--white);
 }

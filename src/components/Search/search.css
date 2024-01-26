@@ -2,14 +2,21 @@
     width: 350px;
     height: 38px;
     border: none;
+    align-items: center;
     border-radius: 20px;
-    padding-left: 12px;
-    background-color: var(--tertiary_grey);
+    padding: 1px 0px 0px 15px;
+    background-color: var(--quaternary_grey);
 }
 
 .search-button{
     border-radius: 50%;
     width: 40px;
     border: none;
-    background-color: var(--tertiary_grey);
+    background-color: var(--quaternary_grey);
+}
+
+.search-icon {
+    height: 100%;
+    width: 60%;
+    color: var(--secondary_grey);
 }

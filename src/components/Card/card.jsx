@@ -14,8 +14,9 @@ function Card( {img, imageDescription, title, voteAverage, detailsRedirect} ) {
                 <h1 className='card_title'>{title}</h1>
             </div>
             <p className='card-vote-average'><FaStar /> {voteAverage} </p>
-            <p className='card-link'><Link to={detailsRedirect}>Details</Link></p>
-            
+            <p className='card-link-container'> 
+                <Link to={detailsRedirect} className='card-link'>Details</Link>
+            </p> 
         </div>  
     )
 }
