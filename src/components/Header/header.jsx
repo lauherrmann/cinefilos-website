@@ -10,8 +10,6 @@ function Header() {
         <nav className='navbar-content'>
             <Logo />
             <Search />
-            <Link to="/movie/1" className='navbarLink'>Movie</Link>
-            <Link to="/search" className='navbarLink'>Search</Link>
         </nav> 
     </div>
 

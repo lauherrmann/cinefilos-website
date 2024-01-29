@@ -1,5 +1,5 @@
 .search-input{
-    width: 350px;
+    width: 250px;
     height: 38px;
     border: none;
     align-items: center;
@@ -12,11 +12,11 @@
     border-radius: 50%;
     width: 40px;
     border: none;
-    background-color: var(--quaternary_grey);
+    background-color: var(--primary_grey);
 }
 
 .search-icon {
     height: 100%;
     width: 60%;
-    color: var(--secondary_grey);
+    color: var(--quaternary_grey);
 }

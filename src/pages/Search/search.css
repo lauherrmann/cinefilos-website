@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.searchPage-title {
+    color: var(--quaternary_grey);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.movies_cards-container {
+    min-height: 100vh;
+    padding: 90px 80px 0px 80px;
+    border-radius: 30px;
+    margin: 0px 50px 0px 50px;
+}
+
+.cards_container {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    min-height: 1900px;
+    gap: 35px;
+}

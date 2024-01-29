@@ -10,6 +10,12 @@
   --quaternary_grey: #D9D9D9;
   --white: #fff;
 }
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 body{
   background-color: var(--primary_grey);
