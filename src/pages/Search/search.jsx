@@ -4,9 +4,9 @@ import { useSearchParams } from "react-router-dom";
 import Card from "../../components/Card/card";
 import './search.css'
 
-const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 const imageURL = import.meta.env.VITE_IMG;
+const searchURL = import.meta.env.VITE_SEARCH;
 
 /*import "./MoviesGrid.css";*/
 
@@ -24,15 +24,15 @@ function Search() {
   };
 
   useEffect(() => {  
-    const searchUrl = `${moviesURL}top_rated?${apiKey}`;
+    const searchWQueryUrl = `${searchURL}?${apiKey}&query=${query}`;
 
-    getSearchedMovies(searchUrl);
-  });
+    getSearchedMovies(searchWQueryUrl);
+  }), [query];
 
   return (
       <>
         <section className='search-container'> 
-          <h2 className='searchPage-title'> Resultados para: <span>{query}</span> </h2>
+          <h2 className='searchPage-title'> Resultados para: <span>"{query}"</span> </h2>
           <div className='movies_cards-container'>
             <div className='cards_container'>
               {searchedMovies.length === 0 && <p>Carregando...</p>}
