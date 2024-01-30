@@ -1,12 +1,14 @@
-.card_content {
+.card_container {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.197), rgba(255, 255, 255, 0.022));
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.37);
     border-radius: 10px;
     margin: 0px;
+    display: block;
+    padding-bottom: 10px;
 }
 
-.card_content:hover {
+.card_container:hover {
     background-color: var(--secondary_grey);
     box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.37);
 }
@@ -22,6 +24,13 @@
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     height: 300px;
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
 }
 
 .description_container {
@@ -40,24 +49,18 @@
 .card-vote-average {
     text-align: center;
     color: var(--quaternary_grey);
-    margin: 0px 0px 0px 0px;
     padding: 0px;
 }
 
 .card-link-container {    
-    text-align: center;
     background-color: var(--primary_grey);
-    border-radius: 10px;
-    width: 40%;
-    margin: 10px 70px 0px 70px;
-    padding: 2px 0px 2px 0px;
+    text-decoration: none;
+    color: var(--quaternary_grey);
+    border-radius: 20px;
+    width: 50%;
+    padding: 5px 10px 5px 10px;
 }
 
 .card-link-container:hover {
     border: 1px solid var(--quaternary_grey);
-}
-
-.card-link {
-    text-decoration: none;
-    color: var(--quaternary_grey);
 }

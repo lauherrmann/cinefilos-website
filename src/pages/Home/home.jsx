@@ -39,7 +39,7 @@ const Home = () => {
                                 imageDescription = {movie.title}
                                 title = {movie.title}
                                 voteAverage = {movie.vote_average}
-                                detailsRedirect = {`/movie/${movie.id}`}
+                                detailsRedirect = {`/details/${movie.id}`}
                             />
                         ))}
                     </div> 

@@ -4,19 +4,21 @@ import { FaStar } from "react-icons/fa";
 
 
 
-function Card( {img, imageDescription, title, voteAverage, detailsRedirect} ) {
+function Card( {img, imageDescription, title, voteAverage, detailsRedirect, showLink=true} ) {
     return (
-        <div className='card_content'>
+        <div className='card_container'>
             <div className='photo_container'>
                 <img src={img} alt={imageDescription} className='card_photo'/>
             </div>
-            <div className="description_container">
-                <h1 className='card_title'>{title}</h1>
+            <div className='card_content'>
+                <div className="description_container">
+                    <h1 className='card_title'>{title}</h1>
+                </div>
+                <p className='card-vote-average'><FaStar /> {voteAverage} </p>
+                <p> 
+                    {showLink && <Link to={detailsRedirect} className='card-link-container'>Details</Link>}
+                </p>  
             </div>
-            <p className='card-vote-average'><FaStar /> {voteAverage} </p>
-            <p className='card-link-container'> 
-                <Link to={detailsRedirect} className='card-link'>Details</Link>
-            </p> 
         </div>  
     )
 }
